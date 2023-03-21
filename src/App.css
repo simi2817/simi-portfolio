@@ -148,6 +148,16 @@ nav {
   max-width: 80%;
   text-align: right;
   border: rgb(1, 51, 80) solid;
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: all 0.3s;
+}
+
+.timeline-item-content:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transform: scale(1.1) rotate(0deg);
 }
 
 .timeline-item-content::after {
